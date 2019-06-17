@@ -48,8 +48,10 @@ nav p span {
 }
 
 nav li {
+	box-sizing: border-box;
 	display: inline-block;
-	margin-right: 42px;
+	margin-right: 22px;
+	padding: 13px 20px;
 	font-size: 13px;
 	font-weight: 400;
 	line-height: 15.6px;
@@ -63,9 +65,15 @@ nav li:first-child {
 	border-radius: 50px 50px;
 }
 
-nav li a {
+nav li a{
 	text-decoration: none;
 	color: #ffffff;
+}
+
+nav li:hover {
+	cursor: pointer;
+	background-color: #40aed7;
+	border-radius: 50px 50px;
 }
 
 #box {
@@ -400,6 +408,8 @@ form input:last-child {
 	font-weight: bold;
 	line-height: 14.4px;
 	text-transform: uppercase;
+	outline: none;
+	border: none;
 }
 
 footer {
